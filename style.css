@@ -17,16 +17,17 @@ body {
   display: grid;
   align-content: center;
   justify-content: center;
+  transition: all 250ms;
 }
 main {
   background-color: var(--neutral-700);
   padding: 2rem;
   border-radius: 1.5rem;
   width: 415px;
+  height: fit-content;
 }
-main > * + * {
+main > div > * + * {
   margin-top: 1.5rem;
-  /* border: 1px solid red; */
 }
 h1 {
   color: var(--neutral-100);
@@ -36,6 +37,9 @@ h1 {
   display: none;
 }
 /* RATING STYLES */
+.rating {
+  transition: opacity 250ms;
+}
 .star {
   background-color: var(--neutral-600);
   padding: 15px;
@@ -88,6 +92,8 @@ button:hover {
 /* THANK YOU STYLES */
 .thanks {
   text-align: center;
+  opacity: 0;
+  transition: opacity 300ms;
 }
 .thanks img {
   margin-inline: auto;
