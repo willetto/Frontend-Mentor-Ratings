@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/rating-component-HkEKXQzQc)
-- Live Site URL: [Add live site URL here](https://willetto.github.io/Frontend-Mentor-Ratings/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/rating-component-HkEKXQzQc)
+- Live Site URL: [Github Pages](https://willetto.github.io/Frontend-Mentor-Ratings/)
 
 ## My process
 
@@ -67,4 +67,4 @@ const proudOfThisFunc = () => {
 ## Author
 
 - Website - [Trey Willetto](https://www.treywilletto.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/willetto)
+- Frontend Mentor - [@willetto](https://www.frontendmentor.io/profile/willetto)
