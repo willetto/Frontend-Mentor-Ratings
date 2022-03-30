@@ -38,7 +38,7 @@ h1 {
 }
 /* RATING STYLES */
 .rating {
-  transition: opacity 250ms;
+  transition: opacity 350ms;
 }
 .star {
   background-color: var(--neutral-600);
@@ -93,7 +93,7 @@ button:hover {
 .thanks {
   text-align: center;
   opacity: 0;
-  transition: opacity 300ms;
+  transition: opacity 350ms ease-in-out;
 }
 .thanks img {
   margin-inline: auto;

@@ -23,8 +23,8 @@ function switchState() {
   rating.addEventListener("transitionend", function () {
     rating.classList.add("hidden");
     thanks.classList.remove("hidden");
+    setTimeout(() => (thanks.style.opacity = 1), 50);
   });
-  thanks.style.opacity = 1;
   userRating.textContent = `You selected ${selection} out of 5`;
 }
 
