@@ -27,7 +27,6 @@ function switchState() {
     shake();
   } else {
     rating.style.opacity = 0;
-
     rating.addEventListener("transitionend", function () {
       rating.classList.add("hidden");
       thanks.classList.remove("hidden");
