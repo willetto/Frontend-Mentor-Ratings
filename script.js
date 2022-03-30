@@ -7,6 +7,7 @@ const ratingOptions = ratingScale.children;
 const submit = document.querySelector(".submit");
 const userRating = document.querySelector(".user-rating");
 
+let selection;
 function select(e) {
   if (e.target.classList.contains("rating-scale")) return;
   for (let i = 0; i < ratingOptions.length; i++) {
@@ -30,15 +31,11 @@ function switchState() {
     rating.addEventListener("transitionend", function () {
       rating.classList.add("hidden");
       thanks.classList.remove("hidden");
-      setTimeout(() => (thanks.style.opacity = 1), 50);
+      setTimeout(() => (thanks.style.opacity = 1));
     });
     userRating.textContent = `You selected ${selection} out of 5`;
   }
 }
 
-//Interactives
 ratingScale.addEventListener("click", select);
 submit.addEventListener("click", switchState);
-
-//init
-let selection;
