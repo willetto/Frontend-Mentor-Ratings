@@ -16,16 +16,24 @@ function select(e) {
   selection = +e.target.textContent;
 }
 
-function switchState() {
-  if (!selection) return;
-  rating.style.opacity = 0;
+function shake() {
+  submit.classList.add("shake");
+  setTimeout(() => submit.classList.remove("shake"), 501);
+}
 
-  rating.addEventListener("transitionend", function () {
-    rating.classList.add("hidden");
-    thanks.classList.remove("hidden");
-    setTimeout(() => (thanks.style.opacity = 1), 50);
-  });
-  userRating.textContent = `You selected ${selection} out of 5`;
+function switchState() {
+  if (!selection) {
+    shake();
+  } else {
+    rating.style.opacity = 0;
+
+    rating.addEventListener("transitionend", function () {
+      rating.classList.add("hidden");
+      thanks.classList.remove("hidden");
+      setTimeout(() => (thanks.style.opacity = 1), 50);
+    });
+    userRating.textContent = `You selected ${selection} out of 5`;
+  }
 }
 
 //Interactives
